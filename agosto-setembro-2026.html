@@ -583,7 +583,7 @@
 
   <section id="outubro">
     <div class="section-title-row"><span class="step-eyebrow">5</span><h2 class="section-title">Projeção outubro &amp; pipeline</h2></div>
-    <p class="section-note">Fechamentos de outubro até 08/10 (planilha de vendas) + negociações da planilha de previsão. Só franquia entra nos números de venda e caixa; Partner é contado à parte.</p>
+    <p class="section-note">Fechamentos de outubro até 09/10 (planilha de vendas) + negociações da planilha de previsão. Só franquia entra nos números de venda e caixa; Partner é contado à parte.</p>
     <div class="stat-row" id="oct-stats"></div>
     <div class="caveat" style="margin-top:18px" id="oct-cav"></div>
     <div class="table-wrap" style="margin-top:20px"><table class="closer-table">
@@ -970,7 +970,7 @@ document.querySelectorAll('.viewbar button').forEach(b => b.addEventListener('cl
 (function () {
   const O = DATA.outubro, C = O.closed;
   $('oct-stats').innerHTML = `
-    <div class="stat"><div class="label">Já fechado em outubro (até 08/10)</div><div class="value">${C.franquia_n}</div><div class="foot">${brl(C.franquia_v)} venda · ${brl(C.franquia_c)} caixa</div><div class="foot accent">+ ${C.partner_n} Partner (parceria)</div></div>
+    <div class="stat"><div class="label">Já fechado em outubro (até 09/10)</div><div class="value">${C.franquia_n}</div><div class="foot">${brl(C.franquia_v)} venda · ${brl(C.franquia_c)} caixa</div><div class="foot accent">+ ${C.partner_n} Partner (parceria)</div></div>
     <div class="stat"><div class="label">Negociações quentes</div><div class="value">${O.quentes.length}</div><div class="foot accent">${brl(O.quente_v)} venda · ${brl(O.quente_c)} caixa</div></div>
     <div class="stat"><div class="label">Piso (fechado + quentes)</div><div class="value">${brl(O.piso_v)}</div><div class="foot">${O.piso_n} contratos · caixa ${brl(O.piso_c)}</div></div>
     <div class="stat"><div class="label">Teto (piso + mornos)</div><div class="value">${brl(O.teto_v)}</div><div class="foot">${O.teto_n} contratos · mornos ${brl(O.morno_v)}</div></div>`;
